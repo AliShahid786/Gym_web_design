@@ -30,7 +30,7 @@
         /* border: 2px solid red; */
         position: absolute;
         left: 60px;
-        top: 20px;
+        top: -10px;
     }
     
     .left img {
@@ -47,20 +47,28 @@
     .mid {
         display: block;
         width: 36%;
-        margin: 29px auto;
+        margin: 0px auto;
         /* border: 2px solid green; */
     }
     
     .right {
         position: absolute;
         right: 34px;
-        top: 43px;
+        top: -3px;
         display: inline-block;
-        /* border: 2px solid yellow; */
+    }
+    
+    .header {
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+        background-color: rgb(180, 53, 53);
+        padding: 0x 0px;
     }
     
     .navbar {
         display: inline-block;
+        position: sticky;
     }
     
     .navbar li {
@@ -83,8 +91,20 @@
     .btn {
         font-family: 'Baloo Bhai', cursive;
         margin: 0px 9px;
-        background-color: black;
-        color: white;
+        color: rgb(122, 35, 35);
+        padding: 0px 10px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        top: 6px;
+    }
+    
+    .btn2 {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        color: rgb(122, 35, 35);
         padding: 4px 14px;
         border: 2px solid grey;
         border-radius: 10px;
@@ -230,7 +250,7 @@
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your Phone Number">
             </div>
-            <button class="btn">Submit</button>
+            <button class="btn2">Submit</button>
         </form>
     </div>
     <hr>
